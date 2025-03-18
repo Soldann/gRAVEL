@@ -3,7 +3,7 @@
 import rospy
 import struct
 from sensor_msgs.msg import PointCloud2, PointField
-from nuscenes2bag.msg import RadarObject, RadarObjects
+from nuscenes_adaptor.msg import RadarObject, RadarObjects
 from std_msgs.msg import Header
 
 def radar_callback(msg):
