@@ -1,0 +1,17 @@
+<launch>
+  <!-- Launch camera_info_pub.py -->
+  <node
+    pkg="nuscenes_adaptor"
+    type="camera_info_pub.py"
+    name="camera_info_publisher"
+    output="screen">
+  </node>
+
+  <!-- Launch radar_to_pointcloud.py -->
+  <node
+    pkg="nuscenes_adaptor"
+    type="radar_to_pointcloud.py"
+    name="radar_to_pointcloud"
+    output="screen">
+  </node>
+</launch>
